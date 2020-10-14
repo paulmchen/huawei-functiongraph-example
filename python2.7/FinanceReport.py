@@ -36,7 +36,7 @@ def handler(event, context):
     response_body = {
         'message': 'Financial account aggregation job submitted. ' +
                    'Transaction Id: ' + txn_id + '. '
-                                                 'Processing the external task...'}
+                   'Processing the external task...'}
 
     response = {
         'statusCode': 200,
