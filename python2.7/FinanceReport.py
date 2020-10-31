@@ -32,7 +32,7 @@ def handler(event, context):
     }
     urllib2.urlopen(agg_req, json.dumps(lrt_req_body_json))
 
-    # Async response to caller
+    # Async response to be sent back to the caller
     response_body = {
         'message': 'Financial account aggregation job submitted. ' +
                    'Transaction Id: ' + txn_id + '. '
